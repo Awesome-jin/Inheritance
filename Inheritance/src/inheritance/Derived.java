@@ -20,7 +20,7 @@ public class Derived extends Based {
 		readcnt = 0;
 	}
 	
-	//상위 클래스와 동일한 이름의 print라는 메소드를 만들어보자
+	//상위 클래스에 이미 print()가 있는데 하위 클래스에서 다시 똑같은 print()를 만드는걸 method overriding이라고 한다.
 	public void print() {
 		System.out.println("I'm 하위클래스의 print");
 	}
