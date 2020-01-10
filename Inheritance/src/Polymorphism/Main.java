@@ -23,7 +23,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Star star = new Protoss();
+		Starcraft star = new Protoss();
 		star.attack();
 
 		star = new Terran();
@@ -31,8 +31,11 @@ public class Main {
 
 		star = new Zerg();
 		star.attack();
-
 		//키보드로 a를 누르면 star.attack()이 호출되도록 연결 이런 작업이 가능해짐
+	
+		//Starcraft가 추상 클래스가 아니라면 인스턴스 생성 가능
+		//Starcraft는 abstract가 아니라서 인스턴스를 만들 수 있었는데 abstract를 선언하는 순간 아래 코드는 에러
+		//star = new Starcraft();
 	}
 
 }

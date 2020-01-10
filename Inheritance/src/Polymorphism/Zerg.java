@@ -1,6 +1,6 @@
 package Polymorphism;
 
-public class Zerg extends Star {
+public class Zerg extends Starcraft {
 
 	// 저그의 공격메소드 (다른 종족과 메소드 이름 동일)
 	public void attack()
